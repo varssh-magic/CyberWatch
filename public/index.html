@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07050d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>CyberWatch</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo">◆</span> CyberWatch <span id="live" class="live" title="Live connection">● LIVE</span></div>
+  <button id="notifyBtn" class="btn">🔔 Enable alerts</button>
+</header>
+
+<section class="stats" id="stats"></section>
+
+<div class="searchwrap">
+  <input id="q" type="search" placeholder="Search keyword: company, CVE, ransomware, Microsoft…" autocomplete="off">
+</div>
+
+<div class="filters">
+  <button data-risk="" class="chip on">All</button>
+  <button data-risk="high" class="chip high">High risk</button>
+  <button data-risk="medium" class="chip medium">Medium risk</button>
+  <button data-risk="low" class="chip low">Low risk</button>
+  <span class="sep"></span>
+  <button data-kind="" class="chip on k">Any type</button>
+  <button data-kind="Attack" class="chip k">Attacks</button>
+  <button data-kind="Vulnerability" class="chip k">Vulnerabilities</button>
+</div>
+
+<main id="list"><p class="empty">Loading…</p></main>
+
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="sheet"><button id="close" class="close" aria-label="Close">✕</button><div id="detail"></div></div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+<script src="/app.js"></script>
+</body>
+</html>
