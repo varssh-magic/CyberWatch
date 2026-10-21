@@ -1,7 +1,7 @@
 # CyberWatch
 
 Live cybersecurity alerts on your phone: attacks, breaches and vulnerabilities from around the world, tagged
-**HIGH / MEDIUM / LOW risk**, stored in a searchable database, black-and-purple theme.
+**HIGH / MEDIUM / LOW risk**, stored in a searchable database,.
 
 ## What it does
 - Checks 10 security news feeds + CISA's "actively exploited" list + the NVD CVE feed **every 60 seconds**.
